@@ -1,0 +1,19 @@
+<div>
+    <div class="input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
+        <input type="text" class="form-control" placeholder="title" ng-model="$ctrl.item.title">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-wrench"></span></span>
+        <input type="text" class="form-control" placeholder="details" ng-model="$ctrl.item.details">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+        <input type="text" class="form-control" placeholder="Complete By" ng-model="$ctrl.item.dueDate">
+    </div>
+
+    <button class="btn btn-info pull-right" ng-click="$ctrl.item = {}">Clear</button>
+    <button class="btn btn-success pull-right" ng-click="$ctrl.addItem()">Add</button>
+</div>

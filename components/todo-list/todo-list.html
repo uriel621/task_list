@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>To Do List</h1>
+
+    <div class="col-xs-6">
+        <h3 ng-if="$ctrl.list.length === 0" class="text-muted">No List Items To Display</h3>
+        <list-details ng-repeat="item in $ctrl.list" list-item="item" on-delete="$ctrl.delete(listItemObj)"></list-details>
+    </div>
+
+    <div class="col-xs-6">
+        <add-form on-add="$ctrl.add(todoListItem)"></add-form>
+    </div>
+</div>
