@@ -1,0 +1,10 @@
+<div class="panel" ng-class="{'panel-primary': $ctrl.listItem.status === 'open', 'panel-danger': $ctrl.listItem.status !== 'open'}">
+    <div class="panel-heading">
+        <h3>{{ $ctrl.listItem.title }}</h3>
+    </div>
+    <div class="panel-body">
+        <p><b>Details: </b>{{ $ctrl.listItem.details }}</p>
+        <p><b>Complete By: </b>{{ $ctrl.listItem.dueDate }}</p>
+        <button class="btn btn-danger pull-right" ng-click="$ctrl.deleteItem()">Delete</button>
+    </div>
+</div>
